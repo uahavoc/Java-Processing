@@ -1,5 +1,5 @@
 ArrayList<Integer> x = new ArrayList<Integer>(), y = new ArrayList<Integer>();
-int w=30, h=30, blocks=20, direction=2, applex=10, appley=10, speed = 9, ac1 = 200, ac2 = 200, ac3 = 200; 
+int w=30, h=30, blocks=20, direction=2, applex=10, appley=10, speed = 9, ac1 = 250, ac2 = 250, ac3 = 250; 
 int[]x_direction={0, 0, 1, -1}, y_direction={1, -1, 0, 0}; //direction x and y
 
 boolean tryagain=false;
@@ -35,7 +35,7 @@ void draw() {
          if (x.size() %5==0 && speed>=2) speed-=1;  //5 points speed increase
         applex = (int)random(0, w); //new apple
         appley = (int)random(0, h);
-        ac1 = (int)random(200); ac2 = (int)random(200); ac3 = (int)random(200); //new apple color
+        ac1 = (int)random(250); ac2 = (int)random(250); ac3 = (int)random(250); //new apple color
         
       } else { 
         x.remove(x.size()-1); 
