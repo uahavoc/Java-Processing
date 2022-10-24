@@ -1,4 +1,5 @@
 ArrayList<Integer> x = new ArrayList<Integer>(), y = new ArrayList<Integer>();
+
 int w=30, h=30, blocks=20, direction=2, applex=10, appley=10, speed = 9, ac1 = 250, ac2 = 250, ac3 = 250; 
 int[]x_direction={0, 0, 1, -1}, y_direction={1, -1, 0, 0}; //direction x and y
 
@@ -47,6 +48,8 @@ void draw() {
     textSize(15); 
     textAlign(CENTER); 
     text("Try Again? \n Your score is: "+ x.size() +"\n Press space", width/2, height/3);
+   
+    
     if (keyCode == 32) {
       x.clear(); 
       y.clear(); 
